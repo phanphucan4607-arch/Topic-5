@@ -163,4 +163,45 @@ Nhấn Import
 
 **Triển khai mã nguồn (File Manager)**
 
-Bạn vào File Manager và thực hiện cho cả 2 web
+Upload Mã nguồn WordPress (Century Auto)
+
+1. Cho WordPress:
+
+    Vào thư mục public_html.
+
+    Upload file wp_source_vps.zip.
+
+    Extract (Giải nén) ngay tại đó.
+
+    🚨 Lưu ý quan trọng (Xử lý thư mục con): Sau khi giải nén, nếu các file nằm thụt vào trong một thư mục (ví dụ public_html/wp.phucan.../), bạn phải:
+
+        Vào trong thư mục đó, nhấn Select All.
+
+        Nhấn Move và xóa phần đuôi thư mục đi, chỉ để lại /public_html.
+
+        Đảm bảo file index.php của WordPress phải nằm ngay trong public_html.
+
+
+Cho Laravel
+
+    Vào thư mục laravel.phucan.vietnix.tech.
+
+    Upload file laravel_source_vps.zip.
+
+    Extract tại đây. Đảm bảo sau khi giải nén, bạn thấy thư mục public, app, vendor... nằm ngay trong này.
+   
+   <img width="1147" height="528" alt="image" src="https://github.com/user-attachments/assets/11eee7f3-aba2-4637-ac24-d735f0b35b36" />
+
+
+Cấu hình Laravel
+
+   tại mục laravel.phucan.vietnix.tech tìm file .env
+   
+   tại mục Nếu không thấy, bấm Settings ở góc phải trên -> chọn Show Hidden Filesaravel.phucan.vietnix.tech tìm file .env
+   
+<img width="647" height="288" alt="image" src="https://github.com/user-attachments/assets/d38af511-fa1b-484e-8ecd-612dba39e618" />
+
+
+    
+       
+
