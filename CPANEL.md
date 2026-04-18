@@ -115,3 +115,29 @@ Tạo tên miền mới: * Nhấn nút Create A New Domain.
 
 Giải thích: Laravel chỉ cho phép truy cập từ thư mục public để bảo vệ các file hệ thống quan trọng bên trong. Nếu thiếu đuôi /public, web của bạn sẽ không chạy được hoặc bị lộ mã nguồn.
 
+**Khởi tạo Database cho Laravel**
+Ở bước trước bạn đã tạo Database cho WordPress rồi, bây giờ ta làm nốt cho Laravel và gom về một User quản lý cho tiện.
+
+Vào MySQL® Databases: Quay lại trang chủ cPanel -> chọn MySQL® Databases.
+
+Tạo Database cho Laravel:
+
+   + Tại ô New Database, gõ: ladb
+
+   + Nhấn Create Database -> Kết quả sẽ là: wpphucan_ladb.
+
+   + Nhấn Go Back.
+
+Tạo User quản trị chung 
+
+    Kéo xuống phần Add New User:
+
+    Username: admin_db
+
+    Password: Nhập mật khẩu: b(!NG4}R3()^KMju
+   
+    Nhấn Create User -> Go Back.
+
+<img width="994" height="529" alt="image" src="https://github.com/user-attachments/assets/e8a44206-6289-488b-96b9-bc6c0a9e3f33" />
+
+
