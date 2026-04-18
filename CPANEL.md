@@ -1,4 +1,4 @@
-# **Lý thuyết**
+<img width="975" height="395" alt="image" src="https://github.com/user-attachments/assets/3c09eb65-6978-452b-be69-7d0d50d26b91" /># **Lý thuyết**
 Upload 2 source code Wordpress và Laravel đã cung cấp tại Topic 4 (⁠Topic 4 -  Reverse Proxy⁠) vào CPanel với 2 domain tương ứng đã cấp trước đó (chủ động thêm domain còn lại vào hosting và trỏ domain về IP Hosting với file hosts)
 
 Upload  lại cert SSL từ VPS đã tạo trước đó
@@ -94,3 +94,19 @@ scp root@221.132.21.141:/var/www/*.zip ~/Downloads/
 ```
 scp root@221.132.21.141:/root/*.sql ~/Downloads/
 ```
+<img width="798" height="365" alt="image" src="https://github.com/user-attachments/assets/d1b57818-675a-406d-a4b1-36ac582d0538" />
+
+quay về trang chủ Cpanel 
+Tạo tên miền mới: * Nhấn nút Create A New Domain.
+<img width="975" height="395" alt="image" src="https://github.com/user-attachments/assets/87a436b7-8ea7-4004-8e46-cb57889cf608" />
+
+
+**Điền thông số (Cực kỳ quan trọng):**
+        Domain: Gõ chính xác laravel.phucan.vietnix.tech
+        Share document root: BỎ DẤU TÍCH ở ô này.
+        Document Root: Hệ thống sẽ hiện ra laravel.phucan.vietnix.tech. Bạn hãy sửa/gõ thêm vào cuối để thành:
+        👉 laravel.phucan.vietnix.tech/public
+        Nhấn Submit.
+<img width="975" height="823" alt="image" src="https://github.com/user-attachments/assets/e3ab0a1b-cf28-42d2-b1b8-4fe3f68bd756" />
+
+
