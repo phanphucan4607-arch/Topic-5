@@ -134,8 +134,9 @@ Tạo User quản trị chung
 
     Username: admin_db
 
-    Password: Nhập mật khẩu: b(!NG4}R3()^KMju
+    Password: Nhập mật khẩu: [BEYC@xi@m2u.i,Y
    
+  
     Nhấn Create User -> Go Back.
 
 <img width="994" height="529" alt="image" src="https://github.com/user-attachments/assets/e8a44206-6289-488b-96b9-bc6c0a9e3f33" />
@@ -159,3 +160,7 @@ Nhấn Import
 
 <img width="994" height="529" alt="image" src="https://github.com/user-attachments/assets/4e0691d3-7da4-4197-a050-623a36009882" />
 
+
+**Triển khai mã nguồn (File Manager)**
+
+Bạn vào File Manager và thực hiện cho cả 2 web
