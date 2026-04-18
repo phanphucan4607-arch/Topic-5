@@ -141,3 +141,21 @@ Tạo User quản trị chung
 <img width="994" height="529" alt="image" src="https://github.com/user-attachments/assets/e8a44206-6289-488b-96b9-bc6c0a9e3f33" />
 
 
+**Cấp quyền cho Laravel:**
+
+  quay lại ở phần Add User To Database
+  user: wpphucan_admin_db
+  data: wpphucan_ladb
+Nhấn Add -> Tích vào ALL PRIVILEGES -> Nhấn Make Changes.
+
+**Bây giờ  hãy vào phpMyAdmin**
+Chọn Database wpphucan_ladb bên cột trái.
+
+Chọn tab Import.
+
+Chọn file laravel_db_vps.sql (file 55KB) từ máy Ubuntu lên.
+
+Nhấn Import
+
+<img width="994" height="529" alt="image" src="https://github.com/user-attachments/assets/4e0691d3-7da4-4197-a050-623a36009882" />
+
