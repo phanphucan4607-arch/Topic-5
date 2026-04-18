@@ -101,12 +101,17 @@ Tạo tên miền mới: * Nhấn nút Create A New Domain.
 <img width="975" height="395" alt="image" src="https://github.com/user-attachments/assets/87a436b7-8ea7-4004-8e46-cb57889cf608" />
 
 
-**Điền thông số (Cực kỳ quan trọng):**
+**Điền thông số (Cực kỳ quan trọng)**
         Domain: Gõ chính xác laravel.phucan.vietnix.tech
-        Share document root: BỎ DẤU TÍCH ở ô này.
-        Document Root: Hệ thống sẽ hiện ra laravel.phucan.vietnix.tech. Bạn hãy sửa/gõ thêm vào cuối để thành:
+        
+        Share document root BỎ DẤU TÍCH ở ô này.
+        
+        Document Root Hệ thống sẽ hiện ra laravel.phucan.vietnix.tech. Bạn hãy sửa/gõ thêm vào cuối để thành:
         👉 laravel.phucan.vietnix.tech/public
+        
         Nhấn Submit.
+        
 <img width="975" height="823" alt="image" src="https://github.com/user-attachments/assets/e3ab0a1b-cf28-42d2-b1b8-4fe3f68bd756" />
 
+Giải thích: Laravel chỉ cho phép truy cập từ thư mục public để bảo vệ các file hệ thống quan trọng bên trong. Nếu thiếu đuôi /public, web của bạn sẽ không chạy được hoặc bị lộ mã nguồn.
 
