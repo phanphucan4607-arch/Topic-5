@@ -1,4 +1,4 @@
-<img width="975" height="395" alt="image" src="https://github.com/user-attachments/assets/3c09eb65-6978-452b-be69-7d0d50d26b91" /># **Lý thuyết**
+# **Lý thuyết**
 Upload 2 source code Wordpress và Laravel đã cung cấp tại Topic 4 (⁠Topic 4 -  Reverse Proxy⁠) vào CPanel với 2 domain tương ứng đã cấp trước đó (chủ động thêm domain còn lại vào hosting và trỏ domain về IP Hosting với file hosts)
 
 Upload  lại cert SSL từ VPS đã tạo trước đó
@@ -55,7 +55,7 @@ Giai đoạn 3: Tái thiết lập (Tại cPanel)
 Sử dụng file hosts trên Windows để trỏ tên miền về địa chỉ IP của Hosting mới. Nếu truy cập website hiển thị đầy đủ nội dung, có ổ khóa xanh (SSL) và trả về mã 200 OK cho cả hai bản HTTP/HTTPS là hoàn tất yêu cầu.
 
 
-🟢 GIAI ĐOẠN 1: CHUẨN BỊ VÀ ĐÓNG GÓI (TẠI VPS)
+# 🟢 GIAI ĐOẠN 1: CHUẨN BỊ VÀ ĐÓNG GÓI (TẠI VPS)
 
 
 Nén Code (Gói đồ đạc vào thùng Zip)
