@@ -271,3 +271,10 @@ https://laravel.phucan.vietnix.tech   https://wp.phucan.vietnix.tech
 <img width="1811" height="726" alt="image" src="https://github.com/user-attachments/assets/b87fb9f1-b522-4d8c-900a-e041541e1c65" />
 
 
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/a7de590a-d364-4112-806a-ac64554705dd" />
+
+_Việc thực hiện lệnh Ping và nhận về IP 103.200.23.68 cho cả hai sub-domain chứng minh rằng cơ chế Local DNS Resolution (Phân giải tên miền cục bộ) qua file /etc/hosts đã hoạt động chính xác.
+
+Máy tính đã ưu tiên đọc cấu hình trong file hosts trước khi truy vấn DNS công cộng. Điều này cho phép quản trị viên kiểm thử website trên môi trường mới (Hosting) mà không làm gián đoạn truy cập của người dùng thực tế đang sử dụng hệ thống cũ (VPS)_
+
+
