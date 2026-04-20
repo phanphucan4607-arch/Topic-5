@@ -278,3 +278,32 @@ _Việc thực hiện lệnh Ping và nhận về IP 103.200.23.68 cho cả hai 
 Máy tính đã ưu tiên đọc cấu hình trong file hosts trước khi truy vấn DNS công cộng. Điều này cho phép quản trị viên kiểm thử website trên môi trường mới (Hosting) mà không làm gián đoạn truy cập của người dùng thực tế đang sử dụng hệ thống cũ (VPS)_
 
 
+
+### 🛡️ So sánh Backup Wizard vs JetBackup (Hệ thống Sao lưu & Khôi phục)
+
+| Đặc điểm | 🛠️ Backup Wizard (Mặc định) | 🚀 JetBackup (Nâng cao) |
+| :--- | :--- | :--- |
+| **Bản chất** | Công cụ chính chủ của cPanel | Plugin chuyên dụng (Vietnix cài thêm) |
+| **Cách vận hành** | 🖱️ **Thủ công:** Phải tự tay bấm chạy | 🤖 **Tự động:** Chạy theo lịch trình (Daily/Weekly) |
+| **Phương thức** | **Full Backup:** Nén toàn bộ (Nặng) | **Incremental:** Chỉ nén phần thay đổi (Nhẹ/Nhanh) |
+| **Lưu trữ** | 📁 Lưu tại chỗ (Ngay trên Hosting) | ☁️ Lưu tách biệt (Remote Storage - An toàn hơn) |
+| **Khôi phục** | 🔄 Phải upload file backup từ máy lên | ⚡ **Self-Service:** Chọn ngày và bấm Restore |
+| **Độ ưu tiên** | Dùng khi muốn dọn nhà (Migration) | Dùng để "cứu bồ" khi lỡ tay xóa nhầm code |
+
+---
+
+### 💡 Bài học rút ra (Lessons Learned)
+
+Sau khi thực hiện bài Lab di cư (Migration) từ VPS sang cPanel Hosting, em rút ra các điểm mấu chốt sau:
+
+1.  **Về cấu trúc (Structure):** Laravel và WordPress có cấu trúc thư mục khác nhau. Việc xác định đúng **Document Root** (`/public` cho Laravel) là yếu tố sống còn để vận hành và bảo mật Framework. 
+2.  **Về bảo mật (Security):** Không bao giờ được để lộ file `.env`. Sử dụng `.htaccess` kết hợp với cấu hình Server (LiteSpeed) tạo ra lớp bảo vệ 403 Forbidden giúp ngăn chặn rò rỉ thông tin Database. 
+3.  **Về mạng (Networking):** File **hosts** là công cụ tuyệt vời để kiểm thử website trên môi trường mới trước khi chính thức trỏ DNS toàn cầu, giúp tránh gián đoạn dịch vụ của khách hàng. 
+4.  **Về dữ liệu (Data):** Quy trình "Xác (Source code) - Hồn (Database) - Mạch máu (Config)" phải được thực hiện tuần tự. Việc Import Database thành công và sửa đúng thông số kết nối là bước quan trọng nhất để website "sống" lại.
+
+
+
+
+<img width="1530" height="821" alt="image" src="https://github.com/user-attachments/assets/a5cdb6e0-58f5-43b8-a472-42ad3b62fdb1" />
+
+
