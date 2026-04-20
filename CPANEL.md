@@ -63,8 +63,8 @@ Nén Code (Gói đồ đạc vào thùng Zip)
 1. Đăng nhập vào VPS:
 Mở Terminal trên Ubuntu của bạn và gõ
 ```
-zip -r wp_source_vps.zip /var/www/wp.phucan.vietnix.tech/
-zip -r laravel_source_vps.zip /var/www/laravel.phucan.vietnix.tech/
+zip -r wp_source.zip /var/www/wp.phucan.vietnix.tech/
+zip -r laravel_source.zip /var/www/laravel.phucan.vietnix.tech/
 ```
 **Xuất Database**
 đối với data wordperss
@@ -154,7 +154,7 @@ Chọn Database wpphucan_ladb bên cột trái.
 
 Chọn tab Import.
 
-Chọn file laravel_db_vps.sql (file 55KB) từ máy Ubuntu lên.
+Chọn file laravel_db.sql (file 55KB) từ máy Ubuntu lên.
 
 Nhấn Import
 
@@ -169,7 +169,7 @@ Upload Mã nguồn WordPress (Century Auto)
 
     Vào thư mục public_html.
 
-    Upload file wp_source_vps.zip.
+    Upload file wp_source.zip.
 
     Extract (Giải nén) ngay tại đó.
 
@@ -186,7 +186,7 @@ Cho Laravel
 
     Vào thư mục laravel.phucan.vietnix.tech.
 
-    Upload file laravel_source_vps.zip.
+    Upload file laravel_source.zip.
 
     Extract tại đây. Đảm bảo sau khi giải nén, bạn thấy thư mục public, app, vendor... nằm ngay trong này.
    
