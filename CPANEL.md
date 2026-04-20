@@ -198,10 +198,76 @@ Cấu hình Laravel
    tại mục laravel.phucan.vietnix.tech tìm file .env
    
    tại mục Nếu không thấy, bấm Settings ở góc phải trên -> chọn Show Hidden Filesaravel.phucan.vietnix.tech tìm file .env
+   lamf teen biến sao cho phù hợp 
    
-<img width="647" height="288" alt="image" src="https://github.com/user-attachments/assets/d38af511-fa1b-484e-8ecd-612dba39e618" />
+<img width="523" height="322" alt="image" src="https://github.com/user-attachments/assets/0ced3139-d592-463c-a0c2-18c88b2bddc2" />
 
+**Lý do lỗi: Sau khi giải nén, code WordPress bị chui sâu vào thư mục con (ví dụ: public_html/var/www/...) nên máy chủ không tìm thấy file index.php ở cửa chính.**
 
+   + Vào File Manager -> thư mục public_html.
+
+   + Đi sâu vào các thư mục con cho đến khi thấy các thư mục: wp-admin, wp-content, wp-includes.
+
+   + Nhấn Select All -> Nhấn Move.
+
+   + Tại ô đường dẫn, xóa hết các thư mục con, chỉ để lại: /public_html. Nhấn Move Files.
+
+   + Kết quả: File index.php phải nằm ngay dưới /public_html.
+
+**Chuyển giao chứng chỉ (di cu SSL thủ công)**
+Đây là phần quan trọng để web hiện "ổ khóa xanh" mà không cần chờ Let's Encrypt cấp mới.
+
+    Bước 1 (Tại VPS): Dùng lệnh cat để đọc file chứng chỉ cũ:
+
+        cat /etc/letsencrypt/live/wp.phucan.vietnix.tech/fullchain.pem (Đây là CRT)
+
+        cat /etc/letsencrypt/live/wp.phucan.vietnix.tech/privkey.pem (Đây là KEY) 
+    Bước 2 (Tại cPanel): Tìm mục SSL/TLS -> Manage SSL Sites.
+
+   + Chọn Domain tương ứng.
+
+   + Copy nội dung file fullchain dán vào ô Certificate (CRT).
+
+   + Copy nội dung file privkey dán vào ô Private Key (KEY).
+
+   + Nhấn Install Certificate.
     
-       
+## **Tái thiết lập "Hồn" (Fix lỗi Database)**
+
+Đây là chỗ bạn dễ nhầm nhất. Phải làm đủ 3 bước nhỏ này:
+**Bước 1: Tạo "Cái hộp" chứa dữ liệu (Create Database)**
+
+  +  Vào MySQL® Databases.
+
+  +  Tại Create New Database, gõ: wpdb -> Nhấn Create.
+
+  +  Bây giờ bạn có database tên là: wpphucan_wpdb
+
+**Bước 2: Cấp "Chìa khóa" (Add User to Database)**
+
+    Kéo xuống mục Add User To Database.
+
+    User: Chọn wpphucan_admin_db.
+
+    Database: Phải chọn đúng wpphucan_wpdb.
+
+    Nhấn Add -> Tích vào ALL PRIVILEGES -> Nhấn Make Changes.
+
+**Bước 3: Đổ dữ liệu vào (Import SQL)**
+
+    Vào phpMyAdmin -> Chọn database wpphucan_wpdb bên cột trái.
+
+    Chọn tab Import -> Chọn file wp_db.sql từ máy tính.
+
+    Kéo xuống nhấn Import (hoặc Go). Khi hiện bảng màu xanh là thành công.
+
+
+## **Kiểm tra**
+https://laravel.phucan.vietnix.tech   https://wp.phucan.vietnix.tech
+
+<img width="1811" height="726" alt="image" src="https://github.com/user-attachments/assets/760887f9-b244-4f5b-af88-42d2a6c6c1e8" />
+
+
+<img width="1811" height="726" alt="image" src="https://github.com/user-attachments/assets/b87fb9f1-b522-4d8c-900a-e041541e1c65" />
+
 
